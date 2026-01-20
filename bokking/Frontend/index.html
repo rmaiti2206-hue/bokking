@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookHotel | Hotel Booking System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">Book<span>My</span>Hotel</a>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="btn">Register</a>
+        </nav>
+    </div>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945');">
+    <div class="overlay">
+        <div class="container hero-content">
+            <h1>Find your perfect stay</h1>
+            <p>Search deals on hotels, homes, and much more...</p>
+
+            <!-- SEARCH FORM -->
+            <form action="hotels.html" method="GET" class="search-form">
+                <div class="form-group">
+                    <i class="fa fa-location-dot"></i>
+                    <input type="text" name="location" placeholder="Where are you going?" required>
+                </div>
+
+                <div class="form-group">
+                    <i class="fa fa-calendar"></i>
+                    <input type="date" name="checkin" required>
+                </div>
+
+                <div class="form-group">
+                    <i class="fa fa-calendar"></i>
+                    <input type="date" name="checkout" required>
+                </div>
+
+                <div class="form-group">
+                    <i class="fa fa-user"></i>
+                    <input type="number" name="guests" min="1" placeholder="Guests" required>
+                </div>
+
+                <button type="submit" class="search-btn">
+                    <i class="fa fa-search"></i> Search
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FEATURED HOTELS ================= -->
+<section class="featured">
+    <div class="container">
+        <h2>Featured Hotels</h2>
+
+        <div class="hotel-grid">
+            <!-- Hotel Card -->
+            <div class="hotel-card">
+                <img src="https://images.unsplash.com/photo-1501117716987-c8e1ecb210cc" alt="Hotel">
+                <div class="hotel-info">
+                    <h3>Grand Palace Hotel</h3>
+                    <p><i class="fa fa-location-dot"></i> Kolkata, India</p>
+                    <p class="price">₹4,500 / night</p>
+                    <a href="hotel-details.html" class="details-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="hotel-card">
+                <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa" alt="Hotel">
+                <div class="hotel-info">
+                    <h3>Ocean View Resort</h3>
+                    <p><i class="fa fa-location-dot"></i> Goa, India</p>
+                    <p class="price">₹6,200 / night</p>
+                    <a href="hotel-details.html" class="details-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="hotel-card">
+                <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb" alt="Hotel">
+                <div class="hotel-info">
+                    <h3>Mountain Bliss Stay</h3>
+                    <p><i class="fa fa-location-dot"></i> Manali, India</p>
+                    <p class="price">₹3,800 / night</p>
+                    <a href="hotel-details.html" class="details-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section class="why-us">
+    <div class="container">
+        <div class="features">
+            <div class="feature">
+                <i class="fa fa-shield-halved"></i>
+                <h3>Secure Booking</h3>
+                <p>Safe payments and verified hotels</p>
+            </div>
+
+            <div class="feature">
+                <i class="fa fa-tag"></i>
+                <h3>Best Price</h3>
+                <p>No hidden charges</p>
+            </div>
+
+            <div class="feature">
+                <i class="fa fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>We are here to help anytime</p>
+            </div>
+
+            <div class="feature">
+                <i class="fa fa-map-location-dot"></i>
+                <h3>Map Location</h3>
+                <p>Every hotel with Google Map</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 BookMyHotel. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

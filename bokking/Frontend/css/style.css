@@ -1,0 +1,302 @@
+/* ================= GLOBAL RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ================= HEADER ================= */
+.header {
+    background: #003580;
+    padding: 15px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo span {
+    color: #febb02;
+}
+
+.nav a {
+    margin-left: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.nav .btn {
+    background: #febb02;
+    color: #000;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.55);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* ================= SEARCH FORM ================= */
+.search-form {
+    background: #febb02;
+    padding: 15px;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.form-group {
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group i {
+    color: #003580;
+    margin-right: 8px;
+}
+
+.form-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.search-btn {
+    background: #003580;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ================= FEATURED HOTELS ================= */
+.featured {
+    background: #fff;
+    padding: 60px 0;
+}
+
+.featured h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.hotel-card {
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.hotel-card:hover {
+    transform: translateY(-6px);
+}
+
+.hotel-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hotel-info {
+    padding: 15px;
+}
+
+.hotel-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.hotel-info p {
+    font-size: 14px;
+    color: #666;
+}
+
+.price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.details-btn {
+    display: inline-block;
+    background: #003580;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* ================= WHY US ================= */
+.why-us {
+    background: #f4f6f8;
+    padding: 50px 0;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.feature {
+    background: #fff;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.feature i {
+    font-size: 30px;
+    color: #003580;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    margin-bottom: 5px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #003580;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* ================= AUTH (LOGIN / REGISTER) ================= */
+.auth-box {
+    background: #fff;
+    max-width: 420px;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.auth-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.auth-box button {
+    width: 100%;
+    background: #003580;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* ================= BOOKING PAGE ================= */
+.booking-box {
+    background: #fff;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.booking-box h2 {
+    margin-bottom: 20px;
+}
+
+.booking-box input,
+.booking-box button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.booking-box button {
+    background: #003580;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .search-form {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .nav {
+        display: none;
+    }
+}
